@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="icon" href="./image/logo/Logo Papua.png">
+    <link rel="icon" href="{{ url_for('static', filename='resources/images/logo/Logo Papua.png')}}">
     <title>Portal Papuaprov - Satu Portal untuk semua Hal Tentang Papua</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta charset="utf-8">
@@ -23,7 +23,7 @@
         <nav class="navbar navbar-expand-lg navbar-light sticky-top">
             <div class="container">
                 <div class="navbar-brand">
-                    <a title="TFU" href="./index.html"><img src="./image/logo/PAPUAPROVGOID.png" alt="there for you home page" id="tfu"></a>
+                    <a title="TFU" href="/"><img src="{{ url_for('static', filename='resources/images/logo/PAPUAPROVGOID.png')}}" alt="there for you home page" id="tfu"></a>
                 </div>
                 <button class="navbar-toggler animate__animated animate__fadeInRight" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
@@ -147,13 +147,13 @@
 
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="image/banner/Banner 01.jpg" class="d-block w-100" alt="slide-img-1">
+                    <img src="{{ url_for('static', filename='resources/images/banner/Banner 01.jpg')}}" class="d-block w-100" alt="slide-img-1">
                 </div>
                 <div class="carousel-item">
-                    <img src="image/banner/Banner 02.jpg" class="d-block w-100" alt="slide-img-2">
+                    <img src="{{ url_for('static', filename='resources/images/banner/Banner 02.jpg')}}" class="d-block w-100" alt="slide-img-2">
                 </div>
                 <div class="carousel-item">
-                    <img src="image/banner/Banner 03.jpg" class="d-block w-100" alt="slide-img-3">
+                    <img src="{{ url_for('static', filename='resources/images/banner/Banner 03.jpg')}}" class="d-block w-100" alt="slide-img-3">
                 </div>
             </div>
 
@@ -177,7 +177,7 @@
             <h1 class="title" data-aos="fade-down" data-aos-offset="200" data-aos-duration="800" id="TentangKami">Headline News</h1>
             <div class="row">
                 <div class="col-md-6 d-none d-sm-none d-md-block text-right margin" data-aos="fade-right" data-aos-duration="800">
-                    <img src="./image/news/news 01.jpg" alt="News" class="img" style="padding-bottom: 15px;">
+                    <img src="{{ url_for('static', filename='resources/images/news/news 01.jpg')}}" alt="News" class="img" style="padding-bottom: 15px;">
                     <div class="row container">
                         <div class="col-md-2 text-center news-date align-self-center">
                             <h6 class="news-date-title">14</h6>
@@ -191,7 +191,7 @@
                     </div>
                 </div>
                 <div class="col-md-6 d-none d-sm-none d-md-block margin" data-aos="fade-left" data-aos-duration="800">
-                    <img src="./image/news/news 02.jpg" alt="News" class="img" style="padding-bottom: 15px;">
+                    <img src="{{ url_for('static', filename='resources/images/news/news 02.jpg')}}" alt="News" class="img" style="padding-bottom: 15px;">
                     <div class="row container">
                         <div class="col-md-2 text-center news-date align-self-center">
                             <h6 class="news-date-title">18</h6>
@@ -205,7 +205,7 @@
                     </div>
                 </div>
                 <div class="col-md-6 d-block d-sm-block d-md-none" data-aos="fade-up" data-aos-offset="200" data-aos-duration="800">
-                    <img src="./image/news/news 01.jpg" alt="News" class="img">
+                    <img src="{{ url_for('static', filename='resources/images/news/news 01.jpg')}}" alt="News" class="img">
                     <div class="row container">
                         <div class=" col-3 text-center news-date align-self-center">
                             <h6 class="news-date-title">14</h6>
@@ -219,7 +219,7 @@
                     </div>
                 </div>
                 <div class="col-md-6 d-block d-sm-block d-md-none" data-aos="fade-up" data-aos-offset="200" data-aos-duration="800">
-                    <img src="./image/news/news 02.jpg" alt="News" class="img" style="padding-bottom: 15px;">
+                    <img src="{{ url_for('static', filename='resources/images/news/news 02.jpg')}}" alt="News" class="img" style="padding-bottom: 15px;">
                     <div class="row container">
                         <div class="col-3 text-center news-date align-self-center">
                             <h6 class="news-date-title">18</h6>
@@ -240,19 +240,19 @@
         <div class="container text-center text-md-left">
             <div class="row">
                 <div class="col-md-2 mx-auto">
-                    <a href="./index.html"><img src="./image/logo/Logo Papua.png" width="120px" style="padding-top: 20px;" class="d-none d-md-block"></a>
+                    <a href="/"><img src="{{ url_for('static', filename='resources/images/logo/Logo Papua.png')}}" width="120px" style="padding-top: 20px;" class="d-none d-md-block"></a>
                 </div>
                 <div class="col-md-2 mx-auto margin">
                     <h5 class="font-weight-bold text-uppercase mt-3 mb-4 footer-title">Berita Terbaru</h5>
                     <ul class="list-unstyled">
                         <li>
-                            <a href="./News 01.html" class="footer-link">News 01</a>
+                            <a href="/News 01" class="footer-link">News 01</a>
                         </li>
                         <li>
-                            <a href="./News 02.html" class="footer-link">News 02</a>
+                            <a href="/News 02" class="footer-link">News 02</a>
                         </li>
                         <li>
-                            <a href="./News 03.html" class="footer-link">News 03</a>
+                            <a href="/News 03" class="footer-link">News 03</a>
                         </li>
                     </ul>
                 </div>
@@ -261,13 +261,13 @@
                     <h5 class="font-weight-bold text-uppercase mt-3 mb-4 footer-title">Berita Populer</h5>
                     <ul class="list-unstyled">
                         <li>
-                          <a href="./News 01.html" class="footer-link">News 01</a>
+                          <a href="/News 01" class="footer-link">News 01</a>
                         </li>
                         <li>
-                          <a href="./News 02.html" class="footer-link">News 02</a>
+                          <a href="/News 02" class="footer-link">News 02</a>
                         </li>
                         <li>
-                          <a href="./News 03.html" class="footer-link">News 03</a>
+                          <a href="/News 03" class="footer-link">News 03</a>
                         </li>
                     </ul>
                 </div>
@@ -275,19 +275,19 @@
                 <div class="col-md-4 mx-auto margin d-none d-md-block">
                     <ul class="list-unstyled row">
                         <li>
-                            <a href="#!" class="footer-link"><img title="Facebook" src="./image/icon/facebook.png" alt="Facebook" class="footer-media"></a>
+                            <a href="#!" class="footer-link"><img title="Facebook" src="{{ url_for('static', filename='resources/images/icon/facebook.png')}}" alt="Facebook" class="footer-media"></a>
                         </li>
                         <li>
-                            <a href="#!" class="footer-link"><img title="Youtube" src="./image/icon/play button.png" alt="Youtube" class="footer-media"></a>
+                            <a href="#!" class="footer-link"><img title="Youtube" src="{{ url_for('static', filename='resources/images/icon/play button.png')}}" alt="Youtube" class="footer-media"></a>
                         </li>
                         <li>
-                            <a href="#!" class="footer-link"><img title="Twitter" src="./image/icon/twitter.png" alt="Twitter" class="footer-media"></a>
+                            <a href="#!" class="footer-link"><img title="Twitter" src="{{ url_for('static', filename='resources/images/icon/twitter.png')}}" alt="Twitter" class="footer-media"></a>
                         </li>
                         <li>
-                            <a href="#!" class="footer-link"><img title="Instagram" src="./image/icon/instagram.png" alt="Instagram" class="footer-media"></a>
+                            <a href="#!" class="footer-link"><img title="Instagram" src="{{ url_for('static', filename='resources/images/icon/instagram.png')}}" alt="Instagram" class="footer-media"></a>
                         </li>
                         <li>
-                            <a href="#!" class="footer-link"><img title="Email" src="./image/icon/gmail.png" alt="Email" class="footer-media"></a>
+                            <a href="#!" class="footer-link"><img title="Email" src="{{ url_for('static', filename='resources/images/icon/gmail.png')}}" alt="Email" class="footer-media"></a>
                         </li>
                     </ul>
                 </div>
@@ -314,27 +314,27 @@
             </div>
         </div>
         <div class="footer-copyright text-center py-3">© 2022 Copyright :
-            <a href="./index.html" style="color: black;"> Pemerintah Daerah Provinsi Papua. All Rights Reserved</a>
+            <a href="/" style="color: black;"> Pemerintah Daerah Provinsi Papua. All Rights Reserved</a>
         </div>
     </footer>
 
     <button class="open-button animate__animated animate__fadeIn" onclick="openForm()">
-        <img title="Punya Pertanyaan?" src="./image/icon/chat.png" alt="Chat" class="img">
+        <img title="Punya Pertanyaan?" src="{{ url_for('static', filename='resources/images/icon/chat.png')}}" alt="Chat" class="img">
     </button>
 
     <div class="form-popup" id="myForm">
         <form class="form-container">
             <button type="button" class="open-button line animate__animated animate__fadeInUp">
-                <a href="#"><img title="Line" src="./image/icon/line.png" alt="Line" class="img"></a>
+                <a href="#"><img title="Line" src="{{ url_for('static', filename='resources/images/icon/line.png')}}" alt="Line" class="img"></a>
             </button>
             <button type="button" class="open-button messenger animate__animated animate__fadeInUp">
-                <a href="#"><img title="Messenger" src="./image/icon/facebook messenger.png" alt="Messenger" class="img"></a>
+                <a href="#"><img title="Messenger" src="{{ url_for('static', filename='resources/images/icon/facebook messenger.png')}}" alt="Messenger" class="img"></a>
             </button>
             <button type="button" class="open-button whatsapp animate__animated animate__fadeInUp">
-                <a href="#"><img title="Whatsapp" src="./image/icon/whatsapp.png" alt="Whatsapp" class="img"></a>
+                <a href="#"><img title="Whatsapp" src="{{ url_for('static', filename='resources/images/icon/whatsapp.png')}}" alt="Whatsapp" class="img"></a>
             </button>
             <button type="button" class="open-button animate__animated animate__fadeIn" onclick="closeForm()">
-                <img title="Punya Pertanyaan?" src="./image/icon/chat.png" alt="Chat" class="img">
+                <img title="Punya Pertanyaan?" src="{{ url_for('static', filename='resources/images/icon/chat.png')}}" alt="Chat" class="img">
             </button>
         </form>
     </div>
